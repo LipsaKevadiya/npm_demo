@@ -60,6 +60,7 @@ Hello, Bob! You are 30 years old. */
 // console.log(result); // 30
 
 //factorial
+function factorial(n: number): number;
 function factorial(n: number): number {
   if (n === 0 || n === 1) {
     return 1;

@@ -1,11 +1,13 @@
 {
   "type": "module",
-  "name": "nodes",
+  "name": "inquirer",
   "version": "1.0.0",
   "description": "Node JS Tutorial.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint js",
+    "lint-fix": "eslint js --fix"
   },
   "author": "Lipsa Kevadiya",
   "license": "ISC",
@@ -14,5 +16,8 @@
     "colors": "^1.4.0",
     "inquirer": "^9.2.14",
     "simple-node-logger": "^21.8.12"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
   }
 }

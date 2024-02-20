@@ -1,3 +1,16 @@
+// function isWds(string) {
+//   return string === "WDS";
+// }
+
+// function addNumbers(a, b) {
+//   return a + b;
+// }
+
+// //  console.log(addNumbers(5, 7));
+// // console.log(isWds("WDbdS"))
+
+// module.exports = { isWds, addNumbers };
+
 // Inquirer uses the JS reactive extension to handle events and async flows
 import inquirer from "inquirer";
 //const inquirer = require('inquirer');
@@ -58,4 +71,9 @@ function displayQuizResult(answers) {
 
 inquirer.prompt(quizQuestions).then(displayQuizResult);
 
-module.exports = { displayQuizResult };
+// module.exports = { displayQuizResult };
+export default {
+  inquirer,
+  quizQuestions,
+  displayQuizResult,
+};
